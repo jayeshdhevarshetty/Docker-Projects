@@ -1,0 +1,7 @@
+FROM nginx:alpine
+
+COPY html/index_v2.html /usr/share/nginx/html/index.html
+
+EXPOSE 6790
+
+CMD ["nginx", "-g", "daemon off;"]
